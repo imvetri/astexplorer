@@ -289,13 +289,17 @@ html {
   display: inline-block;
   vertical-align: top;
   outline: none;
-  cursor: pointer;
 }
 
 .output .toolbar > button.active {
   border-color: #999;
   background-color: #999;
   color: #f5f5f5;
+}
+
+
+.output .toolbar > button:not(.active) {
+  cursor:pointer;
 }
 
 .output .toolbar .time {
